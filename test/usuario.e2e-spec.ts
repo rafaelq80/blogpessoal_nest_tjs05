@@ -98,6 +98,7 @@ describe('Testes dos Módulos Usuario e Auth (e2e)', () => {
 
   })
 
+  /** Teste - Consultar Usuário por ID */
   it("06 - Deve Listar apenas um Usuário pelo id", async () => {
     return await request(app.getHttpServer())
     .get(`/usuarios/${usuarioId}`)
